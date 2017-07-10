@@ -1,0 +1,187 @@
+#cover {
+	background-image: url(../images/header_BG.png);
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+
+.inner {
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+
+#title {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#content {
+	background-image: url(../images/color_bg.png);
+	width: 100%;
+	height: 130%;
+}
+
+.shirt {
+	background-image: url(../images/backshine.png);
+	position: absolute;
+	width: 100%;
+	height: 85%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+	.inner {
+		width: 900px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.inner {
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.inner {
+		width: 700px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.inner {
+		width: 600px;
+	}
+
+	.shirt {
+		height: 70%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.inner {
+		width: 500px;
+	}
+
+	.shirt {
+		height: 69%;
+	}
+
+	#content {
+		height: 125%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#title {
+		width: 380px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.inner {
+		width: 400px;
+	}
+
+	.shirt {
+		height: 58%;
+	}
+
+	#content {
+		height: 130%;
+	}
+
+	.shirt {
+		top: -200px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.inner {
+		width: 300px;
+	}
+
+	.shirt {
+		height: 62%;
+	}
+
+	#content {
+		height: 120%;
+	}
+
+	#title {
+		width: 300px;
+	}
+}
+
+@media screen and (max-height: 736px) {
+	#content {
+		height: 105%;
+	}
+
+	.shirt {
+	    height: 69%;
+	}
+
+}
+
+@media screen and (max-height: 710px) {
+	.shirt {
+	    height: 59%;
+	    top: -200px;
+	}
+	#content {
+		height: 110%;
+	}
+}
+
+@media screen and (max-height: 610px) {
+	.shirt {
+	    height: 63%;
+	    top: -200px;
+	}
+	#content {
+		height: 125%;
+	}
+}
+
+@media screen and (max-height: 530px) {
+	.shirt {
+		width: 70%;
+	    top: 0px;
+	}
+	#content {
+		height: 250%;
+	}
+
+	#title {
+		width: 40%;
+	}
+}
+
+@media screen and (max-height:410px) {
+	#content {
+		height: 260%;
+	}
+}
+
+@media screen and (max-height: 360px) {
+	#content {
+		height: 265%;
+	}
+}
+
+
+

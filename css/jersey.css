@@ -1,0 +1,40 @@
+#appned_jersey, #jTitle, #jPlayer, #jRelevant, #jText{
+	text-align: center;
+}
+
+#jPlayer, #jRelevant, #jText{
+	color: #343762;
+	font-family: 'Roboto';
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+#jRelevant{
+	font-weight: bold;
+	margin: 10px auto;
+	font-size: 20px;
+}
+
+#cJersey {
+	margin: 0px auto;
+	position: relative;
+	max-width: 666px;
+	width: 97%;
+}
+
+#jTitle img{
+	margin: 0px auto;
+	max-width: 97%;
+}
+
+.jersey{
+	position: absolute;
+	top:0px;
+	left:0px;
+	cursor: pointer;
+}
+
+.reveal img, .jersey img{
+	width: 100%
+}
+
