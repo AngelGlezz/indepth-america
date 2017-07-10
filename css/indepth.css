@@ -183,5 +183,22 @@
 	}
 }
 
+@media screen and (max-height: 480px) and (max-width: 320px) {
+	#content {
+		height: 135%;
+	}
+
+	#title {
+		width: 80%;
+	}
+
+	.shirt {
+	    width: 90%;
+	    top: -200px;
+		height: 60%;
+	    background-position: 50% 20%;
+	}
+}
+
 
 
