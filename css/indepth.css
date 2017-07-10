@@ -183,7 +183,7 @@
 	}
 }
 
-@media screen and (max-height: 480px) and (max-width: 320px) {
+@media screen and (max-height: 480px) and (min-width: 320px) and (max-width: 359px) {
 	#content {
 		height: 135%;
 	}
