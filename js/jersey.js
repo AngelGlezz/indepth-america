@@ -29,6 +29,8 @@ $(document).ready(function(){
 		"Centenario del América",
 	];
 
+	var cont = 2;
+
 	function triangleY(i){
 		var posy = 0;
 
@@ -50,10 +52,12 @@ $(document).ready(function(){
 		
 		return posx;
 	}
-
+	
 	function closeJersey(event){
 		var close = $("#bClose");
 		var num = close.attr("num");
+		//var cont = 2;
+		console.log(cont);
 
 		$("#jTitle").html("");
 		$("#jPlayer").html("");
@@ -61,7 +65,26 @@ $(document).ready(function(){
 		$("#jText").html("");
 		$("#jersey"+(num-1)).remove();
 
+		$('#cJersey').removeClass('show_shirt');
+		$("#jTitle").removeClass('show_info');
+		$("#jPlayer").removeClass('show_info');
+		$("#jText").removeClass('show_info');
+		$("#jRelevant").removeClass('show_info');
+		$('.shirt').addClass('shirt_reveal');//horizontal
+		$('.shirt').removeClass('big_shirt');//horizontal
+
+		$(".reveal").css({"filter": "opacity(" + (5*cont) + "%)"});
+		cont = cont + 1;
+
+		if (cont == 8) {
+			$(".reveal").css({"filter": "opacity(100%)"});
+			$("#button").css({'display': 'block'});
+		}
+
 		close.remove();
+		return cont;
+
+		
 	}
 
 	function clickJersey(event){
@@ -85,18 +108,20 @@ $(document).ready(function(){
 		jersey.css({
 			"z-index": 100,
 			"-webkit-clip-path": "polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)",
-			"clip-path": "polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)"	
+			"clip-path": "polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)"
 		});
 
+		jersey.addClass('show');
+		cJersey.addClass('show_shirt');
+		jTitle.addClass('show_info');
+		jPlayer.addClass('show_info');
+		jText.addClass('show_info');
+		jRelevant.addClass('show_info');
+		$('.shirt').removeClass('shirt_reveal');//horizontal
+		$('.shirt').addClass('big_shirt');//horizontal
+
 		var close = $("<div>");
-		close.attr("id", "bClose").attr("num", num).css({
-			"position":"absolute",
-			"top":"0px",
-			"right":"0px",
-			"width":"80px",
-			"height":"80px",
-			"z-index":"200"
-		}).html(bClose).bind("click", closeJersey);
+		close.attr("id", "bClose").attr("num", num).html(bClose).bind("click", closeJersey);
 		cJersey.append(close);
 	}
 

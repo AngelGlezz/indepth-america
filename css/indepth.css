@@ -10,7 +10,6 @@
 	width: 1000px;
 	height: 100%;
 	margin: auto;
-	position: relative;
 }
 
 #title {
@@ -25,22 +24,58 @@
 #content {
 	background-image: url(../images/color_bg.png);
 	width: 100%;
-	height: 130%;
+	height: 100%;
+}
+
+.shirt_content {
+	width: 100%;
+	height: 80%;
+	position: relative;
+	margin: auto;
 }
 
 .shirt {
-	background-image: url(../images/backshine.png);
 	position: absolute;
-	width: 100%;
-	height: 85%;
+	width: 55%;
+	height: 90%;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
-	background-position: 50% 0%;
-	background-repeat: no-repeat;
 }
+
+#title_history {
+	font-size: 45px;
+	font-family: 'Roboto', sans-serif;
+	color: #283f53;
+	text-align: center;
+	padding-top: 50px;
+}
+/*  horizontal */
+.shirt_reveal {
+	width: 55%;
+}
+
+.big_shirt {
+	width: 100%!important;
+}
+
+@media screen and (max-width: 1024px) {
+	#title_history {
+    	font-size: 23px;
+	}
+
+	.shirt {
+		width: 45%;
+	}
+
+	.shirt_reveal {
+		width: 45%;
+	}
+}
+
+/* termina horizontal */
 
 @media screen and (max-width: 1000px) {
 	.inner {
@@ -78,10 +113,6 @@
 	.shirt {
 		height: 69%;
 	}
-
-	#content {
-		height: 125%;
-	}
 }
 
 @media screen and (max-width: 550px) {
@@ -97,14 +128,8 @@
 
 	.shirt {
 		height: 58%;
-	}
-
-	#content {
-		height: 130%;
-	}
-
-	.shirt {
 		top: -200px;
+		width: 100%;
 	}
 }
 
@@ -115,10 +140,6 @@
 
 	.shirt {
 		height: 62%;
-	}
-
-	#content {
-		height: 120%;
 	}
 
 	#title {
@@ -135,6 +156,10 @@
 	    height: 69%;
 	}
 
+	.shirt_content {
+		height: 60%;
+		margin-top: 80px;
+	}
 }
 
 @media screen and (max-height: 710px) {
@@ -168,6 +193,16 @@
 
 	#title {
 		width: 40%;
+	}
+}
+
+@media screen and (max-height:414px) {
+	.shirt_content {
+		margin-top: 0px;
+	}
+
+	#title_history {
+	    font-size: 33px;
 	}
 }
 

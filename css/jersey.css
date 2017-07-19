@@ -32,9 +32,62 @@
 	top:0px;
 	left:0px;
 	cursor: pointer;
+	filter: opacity(50%);
+}
+
+.jersey:hover{
+	filter: opacity(100%);
 }
 
 .reveal img, .jersey img{
-	width: 100%
+	width: 100%;
 }
+
+.reveal {
+	filter: opacity(5%);
+}
+
+.show {
+	display: block;
+	filter: opacity(100%);
+}
+
+.show_shirt {
+	width: 50%!important;
+	float: left;
+}
+
+.show_info {
+	width: 50%!important;
+	float: left;
+}
+
+#button {
+	width: 100px;
+	height: 50px;
+	border-radius: 50px;
+	margin: auto;
+	display: none;
+	background-color: blue;
+	cursor: pointer;
+}
+
+#bClose {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 80px;
+	height: 80px;
+	z-index: 200;
+}
+			
+@media screen and (max-width: 600px) {
+	#bClose {
+		top: -20px;
+		width: 37%;
+	}
+}
+
+
+
 
