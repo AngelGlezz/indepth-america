@@ -72,6 +72,7 @@ $(document).ready(function(){
 		$("#jRelevant").removeClass('show_info');
 		$('.shirt').addClass('shirt_reveal');//horizontal
 		$('.shirt').removeClass('big_shirt');//horizontal
+		$('#content').removeClass('content');
 
 		$(".reveal").css({"filter": "opacity(" + (5*cont) + "%)"});
 		cont = cont + 1;
@@ -119,6 +120,7 @@ $(document).ready(function(){
 		jRelevant.addClass('show_info');
 		$('.shirt').removeClass('shirt_reveal');//horizontal
 		$('.shirt').addClass('big_shirt');//horizontal
+		$('#content').addClass('content');
 		
 
 		var close = $("<div>");
