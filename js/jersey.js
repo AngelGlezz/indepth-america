@@ -119,6 +119,7 @@ $(document).ready(function(){
 		jRelevant.addClass('show_info');
 		$('.shirt').removeClass('shirt_reveal');//horizontal
 		$('.shirt').addClass('big_shirt');//horizontal
+		
 
 		var close = $("<div>");
 		close.attr("id", "bClose").attr("num", num).html(bClose).bind("click", closeJersey);

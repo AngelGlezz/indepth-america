@@ -113,6 +113,10 @@
 	.shirt {
 		height: 69%;
 	}
+
+	#content {
+		height: 125%;
+	}
 }
 
 @media screen and (max-width: 550px) {
@@ -131,6 +135,10 @@
 		top: -200px;
 		width: 100%;
 	}
+
+	#content {
+		height: 130%;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -142,6 +150,10 @@
 		height: 62%;
 	}
 
+	#content {
+		height: 120%;
+	}
+
 	#title {
 		width: 300px;
 	}
@@ -149,7 +161,7 @@
 
 @media screen and (max-height: 736px) {
 	#content {
-		height: 105%;
+		height: 120%;
 	}
 
 	.shirt {
@@ -158,7 +170,7 @@
 
 	.shirt_content {
 		height: 60%;
-		margin-top: 80px;
+		margin-top: 0px;
 	}
 }
 
@@ -168,7 +180,7 @@
 	    top: -200px;
 	}
 	#content {
-		height: 110%;
+		height: 130%;
 	}
 }
 
@@ -178,7 +190,7 @@
 	    top: -200px;
 	}
 	#content {
-		height: 125%;
+		height: 150%;
 	}
 }
 
@@ -188,7 +200,7 @@
 	    top: 0px;
 	}
 	#content {
-		height: 250%;
+		height: 240%;
 	}
 
 	#title {
@@ -208,13 +220,13 @@
 
 @media screen and (max-height:410px) {
 	#content {
-		height: 260%;
+		height: 250%;
 	}
 }
 
 @media screen and (max-height: 530px) and (max-width: 360px) {
 	#content {
-		height: 135%;
+		height: 125%;
 	}
 
 	#title {
