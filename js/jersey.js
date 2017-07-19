@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 		if (cont == 8) {
 			$(".reveal").css({"filter": "opacity(100%)"});
-			$("#button").css({'display': 'block'});
+			$(".button").css({'display': 'block'});
 			$("#shine").css({'display': 'block'});
 		}
 

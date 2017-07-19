@@ -62,14 +62,15 @@
 	float: left;
 }
 
-#button {
-	width: 100px;
+.button {
+	width: 140px;
 	height: 50px;
-	border-radius: 50px;
 	margin: auto;
 	display: none;
-	background-color: blue;
 	cursor: pointer;
+	position: fixed;
+	right: 0px;
+	top: 200px;
 }
 
 #bClose {
