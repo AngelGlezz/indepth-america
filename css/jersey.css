@@ -22,9 +22,21 @@
 	width: 97%;
 }
 
+#jTitle{
+	margin-bottom: 15px;
+	margin-top: 180px;
+}
+
 #jTitle img{
 	margin: 0px auto;
 	max-width: 97%;
+}
+
+#jTitle.reveal{
+	margin-top: 0px;
+	width: 100%!important;
+	float: none;
+	filter: opacity(100%);
 }
 
 .jersey{
@@ -81,8 +93,36 @@
 	height: 80px;
 	z-index: 200;
 }
+
+@media screen and (max-width: 1000px) {
+	#jTitle{
+		margin-top: 150px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#jTitle{
+		margin-top: 130px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#jTitle{
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#jTitle{
+		margin-top: 50px;
+	}
+}
 			
 @media screen and (max-width: 600px) {
+	#jTitle{
+		margin-top: 0px;
+	}
+
 	.show_shirt {
 		width: 100%!important;
 		float: none;

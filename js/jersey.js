@@ -78,9 +78,19 @@ $(document).ready(function(){
 		cont = cont + 1;
 
 		if (cont == 8) {
+			var jTitle = $("#jTitle");
+
 			$(".reveal").css({"filter": "opacity(100%)"});
+			jTitle.addClass('show_info');
+			jTitle.addClass('reveal');
+
+			var titleImage = $("<img>");
+			titleImage.attr("src", urlIndepth + "images/title_reveal.png");
+			jTitle.html(titleImage);
+
 			$(".button").css({'display': 'block'});
 			$("#shine").css({'display': 'block'});
+			$(".shinebg").addClass("backshine");
 		}
 
 		close.remove();
